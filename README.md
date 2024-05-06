@@ -1,6 +1,35 @@
 # React
-React Components
+React Elements
+React uses JavaScript to create elements, like a div with ID "root". To render, add a script tag with type "text/javascript" and use "ReactDOM.render" with two arguments: "React.createElement" and "getting started with React."
 
+Creating React Elements
+The ReactDOM.render function is used to incorporate the createElement call from line 19 into the document at the 'root' element, infusing React code into it. This allows for viewing elements as UI components that can be rendered whenever needed. The 'Getting Started with React' text is adjusted to test the function's functionality.
+
+Refactoring elements using JSX
+To create a bulleted list in React, use React.createElement and modify the third argument to add list items. Start with a list item and add more days. As the UI becomes more complex, use JSX, a JavaScript superhero helper, to create a cool emoji list. However, React does not work with JSX tags, so use Babel to fix this issue.
+
+Incorporating Babel
+The text suggests using babeljs.io to convert JSX code into a browser-friendly format. This is achieved by using a CDN link and adjusting the 'text/javascript' to 'text/babel' to fix syntax errors. Babel is a powerful tool for converting complex code into a more user-friendly format, and it is not the most optimized solution. Further tools will be discussed in the future.
+
+JSX Syntax
+JSX is a powerful tool for incorporating dynamic content into your apps. It allows you to reference variables with variable names, like "robot" for a robot, "cowboy" for a cowboy, and "moon" for a friendly moon. These values are displayed in list items using curly braces. JSX expressions with curly braces can be incorporated with various functions, such as "toUpperCase()" or "name.length".
+
+React Components
+Building React Components involves creating a small, user interface piece. Begin by removing emojis and implementing an unordered list. Next, create a JavaScript function that executes JSX.
+
+ Component Properties
+The text outlines the use of components to showcase live data in a restaurant. The components are introduced as props, which can be inserted into the header function. The console.log() function is used to preview the properties, and the name of the component is filled in with the desired name. The main component can also be showcasing delicious food, with the adjective "adjective" added for style. A new property for the footer component is introduced, which returns a footer tag with a copyright year from props. The current year can be added using curly braces. The props object is viewed as a container for storing component information, and dot notation is used for dynamism.
+
+Lists
+We have used JSX expressions to send data to components, including strings, date functions, and booleans. However, we now need to handle more intricate data types like arrays. For example, we can map over an unordered list of dishes using dishes.map, which returns a list item for each dish. We can access these values through props, but a console warning is needed for each child in a list.
+
+Applying Keys to List Items
+The text discusses dynamically rendering menu items, highlighting the need for unique keys to prevent synchronization issues. Two approaches are discussed: adding an index (i) as a key for each item, which is a potential rendering issue, and creating an array of unique IDs for each dish, which ensures data stability. The importance of keys is emphasized during dynamic value iteration.
+
+React Fragments
+Enclosing sibling components in a div prevents errors when wrapping JSX elements. Avoid cluttering setups with div wrappers. Use React Fragment instead, adding React.Fragment with React.Fragment to neatly frame header, section, and footer components. Shorter syntax requires specific React versions.
+
+React State
 #Destructuring Arrays and Objects
 Destructuring is a crucial JavaScript concept that allows dynamic retrieval of properties from the props object in the app.js file, enhancing clarity and allowing direct property extraction by their keys.
 Array destructuring is a destructuring technique used to assign names to values in an array, allowing for the extraction of specific values like "Tokyo" or "Tahoe City" without assigning variable names based on keys.
